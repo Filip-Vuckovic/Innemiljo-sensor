@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="data:,">
+        <style>
+            body { 
+                text-align: center; 
+                font-family: "Trebuchet MS", Arial;
+            }
+            table { 
+                border-collapse: collapse; 
+                width:35%; 
+                margin-left:auto; 
+                margin-right:auto; }
+            th { 
+                padding: 12px; 
+                background-color: #0043af; 
+                color: white; 
+            }
+            tr { 
+                border: 1px solid #ddd; 
+                padding: 12px; 
+            }
+            tr:hover { 
+                background-color: #bcbcbc; 
+            }
+            td { 
+                border: none; 
+                padding: 12px; 
+            }
+            .sensor { 
+                
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Innemiljø</h1>
+        <table>
+        <tr><td>Temperature (bme)</td><td class="sensor">{{ temperature_bme }}</td></tr>
+        <tr><td>Humidity (bme)</td><td class="sensor">{{ humidity_bme }}</td></tr>
+        <tr><td>Pressure</td><td class="sensor">{{ pressure }}</td></tr>
+        <tr><td>tVOC</td><td class="sensor">{{ tVOC }}</td></tr>
+        <tr><td>eCO2</td><td class="sensor">{{ eCO2 }}</td></tr>
+        <tr><td>Temperature (aht)</td><td class="sensor">{{ temperature_aht }}</td></tr>
+        <tr><td>Humidity (aht)</td><td class="sensor">{{ humidity_aht }}</td></tr>
+        </table>
+    </body>
+</html>
